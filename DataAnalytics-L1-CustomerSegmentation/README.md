@@ -1,46 +1,77 @@
 # Task 2 — Customer Segmentation Analysis
 
 ## Track
-Data Analytics (Level 1)
+
+**Data Analytics (Level 1)**
 
 ## Objective
-Segment an e-commerce company's customer base into distinct groups based on purchasing
-behaviour using K-Means clustering, enabling targeted marketing strategies.
+
+Segment an e-commerce company's customer base into distinct groups based on purchasing behaviour using **K-Means Clustering**, enabling businesses to design targeted marketing strategies and improve customer retention.
 
 ## Dataset
-Online Retail Dataset (merged 2009-2010 and 2010-2011 transaction files) — sourced from
-Kaggle/UCI. Contains transaction-level e-commerce data: InvoiceNo, StockCode, Description,
-Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
+
+**Customer Segmentation Dataset (Synthetic RFM Dataset)**
+
+The dataset contains customer-level information with the following features:
+
+* CustomerID
+* Recency (Days since last purchase)
+* Frequency (Number of purchases)
+* Monetary (Total purchase amount)
+* Customer Lifetime Value (CLV)
 
 ## Tech Stack
-Python, pandas, numpy, scikit-learn (KMeans, StandardScaler), matplotlib, seaborn,
-Jupyter Notebook
+
+* Python
+* pandas
+* NumPy
+* scikit-learn (KMeans, StandardScaler)
+* matplotlib
+* seaborn
+* Jupyter Notebook
 
 ## Key Steps Performed
-- Merged two years of transaction data into a single dataset
-- Data cleaning and preprocessing
-- RFM feature engineering: Recency, Frequency, Monetary value per customer
-- Feature standardisation using StandardScaler
-- K-Means clustering to segment customers into distinct groups
-- Cluster visualisation and customer count per cluster
-- Exported final customer segments to CSV
-- Marketing recommendations tailored to each customer segment
+
+* Generated and loaded the customer dataset
+* Inspected dataset structure and checked for missing values
+* Performed descriptive statistical analysis
+* Selected RFM (Recency, Frequency, Monetary) features for customer segmentation
+* Standardised data using **StandardScaler**
+* Applied **K-Means Clustering**
+* Used the **Elbow Method** to determine the optimal number of clusters
+* Visualised customer segments using scatter plots
+* Profiled each cluster by calculating average feature values
+* Created a bar chart showing the number of customers in each cluster
+* Developed marketing recommendations for every customer segment
 
 ## Key Insights
-- **Cluster 0 – High Value Customers:** Purchase frequently and spend the most; the most
-  valuable segment for the business
-- **Cluster 1 – Loyal Customers:** Regular purchasers with strong long-term retention potential
-- **Cluster 2 – At-Risk Customers:** Long time since last purchase, declining frequency and
-  spend — candidates for win-back campaigns
-- **Cluster 3 – Occasional Customers:** Infrequent, moderate spenders with potential to become
-  loyal customers with the right engagement
+
+**Cluster 0 – High Value Customers**
+
+* Highest purchase frequency and spending.
+* Best candidates for VIP rewards and exclusive offers.
+
+**Cluster 1 – Loyal Customers**
+
+* Consistent purchasers with good long-term value.
+* Suitable for loyalty programs and personalized promotions.
+
+**Cluster 2 – Occasional Customers**
+
+* Moderate purchasing behaviour with growth potential.
+* Can be encouraged through targeted discounts and product recommendations.
+
+**Cluster 3 – At-Risk Customers**
+
+* Long time since last purchase and low spending.
+* Ideal targets for win-back campaigns and re-engagement emails.
 
 ## Files in this Folder
-- `DataAnalytics-L1-Task2-CustomerSegmentationAnalysis.ipynb` — full notebook with code,
-  clustering analysis, and marketing recommendations
-- `Customer_Segments.csv` — final customer segments output
-- `screenshots/` — output visualizations
-- `README.md` — this file
+
+* **Customer_Segmentation_Analysis.ipynb** – Complete Jupyter Notebook containing data preprocessing, clustering, visualisations, and marketing insights.
+* **customer_segmentation_dataset.csv** – Customer dataset used for segmentation analysis.
+* **README.md** – Project documentation.
 
 ## Author
-Rahul Gaonkar
+
+**Rahul Gaonkar**
